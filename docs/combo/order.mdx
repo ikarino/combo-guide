@@ -1,0 +1,33 @@
+---
+id: order
+title: 💚行動順
+---
+
+import BasicPolicy from '../../src/components/BasicPolicy';
+import ComboMap from '../../src/components/ComboMap';
+import Todo from '../../src/components/Todo';
+
+仲間が行動する順番（以下行動順）は決まっています。  
+同一フロアで行動順は変わりませんが、階を降りると変わっています。
+
+## 行動順の決まり方
+行動順はフロア開始時のポポロを中心とした配置で決まります。  
+壁や敵などの障害物が番号に乗っていた場合、その番号は飛ばされます。
+
+<ComboMap size={40} data={[
+  "111⑱111",
+  "11⑬⑧⑳11",
+  "1⑮⑤②⑩㉒1",
+  "⑰⑦①ポ④⑫㉔",
+  "1⑯⑥③⑪㉓1",
+  "11⑭⑨㉑11",
+  "111⑲111"
+]} />
+
+中心から渦巻くように決まっていますが、複雑で覚えているのも大変です。  
+[Windows用の行動順補助ソフト](http://ikarino99.web.fc2.com/src/OrderMemory.exe)を作成していますので、活用下さい。
+
+スマホのブラウザで利用可能なものも鋭意製作中です👷
+
+## 行動順はなぜ重要なのか
+<Todo>ヘビースモコン</Todo>

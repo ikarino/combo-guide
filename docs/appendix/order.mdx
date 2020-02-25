@@ -1,0 +1,32 @@
+---
+id: order
+title: 行動順とアイテム落下順序
+---
+
+import BasicPolicy from '../../src/components/BasicPolicy';
+import ComboMap from '../../src/components/ComboMap';
+import Todo from '../../src/components/Todo';
+
+## 行動順
+壁や敵キャラなどの障害物がある場合、その番号は飛ばされます。
+<ComboMap size={40} data={[
+  "111⑱111",
+  "11⑬⑧⑳11",
+  "1⑮⑤②⑩㉒1",
+  "⑰⑦①ポ④⑫㉔",
+  "1⑯⑥③⑪㉓1",
+  "11⑭⑨㉑11",
+  "111⑲111"
+]} />
+
+
+## アイテム落下順序
+以下の25個以上のマスに落ちた場合は消えます。
+
+<ComboMap size={56} data={[
+  "⑩⑪⑫⑬⑭",
+  "⑮⑥②⑦⑯",
+  "⑰⑤①③⑱",
+  "⑲⑧④⑨⑳",
+  "㉑㉒㉓㉔㉕"
+]} />
